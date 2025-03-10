@@ -1,0 +1,27 @@
+<script>
+	function valider() {
+		var obj = document. getElementById("squats").value;
+		if(obj == 37) {
+			location.assign("./kq46567.html");
+			} else {
+			alert("Tu t'es trompé d'objet. Réessaye... Indice : c'est Changbin qui t'a donné ce programme !");
+		}
+		}
+</script>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="./style.css"/>
+	</head>
+	
+	<body>
+		<h4 class="lieu">📍 KQ Entertainment</h4>
+		<p>
+			<p class="monologue">Je suis à KQ pour y retrouver un membre de ATEEZ.<br/><br/>Changbin m’a confié un programme d’entraînement à transmettre à ATEEZ : 25 pompes, 3 soulevés de terre et... Combien de squats déjà ?</p>
+			<p class="consigne">Le programme d’entraînement de Changbin contient...</p>
+			<p><input type="number" id="squats" name="squats"/></p>
+			<p><button onclick="valider()">Valider</button></p>
+		</p>
+	</body>
+	
+</html>

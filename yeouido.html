@@ -1,0 +1,27 @@
+<script>
+	function giveObj() {
+		var obj = document. getElementById("objet_skz").value;
+		if(obj.toUpperCase().includes("DWAEKKI")) {
+			location.assign("./yeouido354657.html");
+			} else {
+			alert("Tu t'es trompé d'objet. Réessaye... Indice : cet objet t'a été confié par un suspect !");
+		}
+		}
+</script>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="./style.css"/>
+	</head>
+	
+	<body>
+		<h4 class="lieu">📍 Yeouido Park</h4>
+		<p>
+			<p class="monologue">Je suis au parc de Yeouido pour y retrouver <b>un des membres de Stray Kids</b>.<br/><br/>Quelqu’un m’a d’ailleurs confié quelque chose pour lui... Je devrais lui rendre cet objet tout de suite.</p>
+			<p class="consigne">Quel objet dois-tu rendre à un des membres de Stray Kids ?</p>
+			<p><input type="text" id="objet_skz" name="objet_skz"/></p>
+			<p><button onclick="giveObj()">Donner</button></p>
+		</p>
+	</body>
+	
+</html>
