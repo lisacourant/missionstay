@@ -1,0 +1,43 @@
+<script>
+	function verifier() {
+		var preuve1 = document. getElementById("video_surveillance").value;
+		var preuve2 = document. getElementById("portrait_robot").value;
+		var preuve3 = document. getElementById("polaroid_heure").value;
+		
+		if(
+			(preuve1.toLowerCase().includes("clé usb") || preuve1.toLowerCase().includes("clef usb"))
+			&& (preuve2.toLowerCase().includes("noeud"))
+			&& (preuve3 == 57)
+			) {
+			location.assign("./jype124657.html");
+			} else {
+			alert("Tu n'as pas bien analysé les preuves... Réessaye.");
+		}
+	}
+</script>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="./style.css"/>
+	</head>
+	
+	<body>
+		<p class="mission">As-tu bien scanné tous les QR codes avant de venir ici ? :)</p>
+		<h4 class="lieu">📍 JYP Entertainment</h4>
+		<p>
+			<p class="monologue">Je suis à JYP Entertainment, le lieu du crime. Je ne devrais être ici que si j’ai bien réuni assez de preuves pour trouver mon coupable.<br/><br/>3 preuves incriminantes devraient suffire !</p>
+			
+			<p class="consigne">Première preuve : la vidéo de surveillance ! Sur quelle support est-elle enregistrée ?</p>
+			<p><input type="text" id="video_surveillance" name="video_surveillance"/></p>
+			
+			<p class="consigne">Deuxième preuve : le portrait robot ! Quel élément portait le coupable dans ses cheveux ?</p>
+			<p><input type="text" id="portrait_robot" name="portrait_robot"/></p>
+			
+			<p class="consigne">Troisième preuve : le polaroid ! Il a été pris le 15 mars à quelle heure ?</p>
+			<p><input type="number" id="polaroid_heure" name="polaroid_heure"/></p>
+			
+			<p><button onclick="verifier()">Valider</button></p>
+		</p>
+	</body>
+	
+</html>
