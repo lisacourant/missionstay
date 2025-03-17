@@ -126,10 +126,48 @@ body {
 	font-size: 1em;
 }
 
-#testPos {
+.lieuBg, .charBg, .dialBg, .buttonBg {
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.buttonBg {
+	text-align: right;
+}
+
+.lieuBg .fond, .charBg .fond, .dialBg .fond {
+	width: 100%;
+}
+
+.buttonBg .fond {
+	width: 30%;
+}
+
+.lieuBg .content, .charBg .content, .dialBg .content, .buttonBg .content {
 	position: absolute;
-	top: 65%;
-	width: 70%;
+}
+
+.buttonBg .content {
+	right: 0;
+	bottom: 0;
+}
+
+.lieuBg .content, .dialBg .content {
+	top: 15px;
+	left: 10%;
+	width: 80%;
+}
+
+.charBg .content {
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding: 50px;
+}
+
+.charaImg {
+	width: 80%;
+	margin: auto;
 }
 
 input {
