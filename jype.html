@@ -6,8 +6,8 @@
 		
 		if(
 			(preuve1.toLowerCase().includes("clé usb") || preuve1.toLowerCase().includes("clef usb"))
-			&& (preuve2.toLowerCase().includes("noeud"))
-			&& (preuve3 == 57)
+			&& (preuve2.toLowerCase().includes("noeud") || preuve2.toLowerCase().includes("ruban") || preuve2.toLowerCase().includes("nœud"))
+			&& (preuve3.toLowerCase().includes("19h57") || (preuve3.toLowerCase().includes("19") && preuve3.toLowerCase().includes("57")))
 			) {
 			location.assign("./jype124657.html");
 			} else {
@@ -34,7 +34,7 @@
 			<p><input type="text" id="portrait_robot" name="portrait_robot"/></p>
 			
 			<p class="consigne">Troisième preuve : le polaroid ! Il a été pris le 15 mars à quelle heure ?</p>
-			<p><input type="number" id="polaroid_heure" name="polaroid_heure"/></p>
+			<p><input type="text" id="polaroid_heure" name="polaroid_heure"/></p>
 			
 			<p><button onclick="verifier()">Valider</button></p>
 		</p>

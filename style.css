@@ -126,6 +126,12 @@ body {
 	font-size: 1em;
 }
 
+#testPos {
+	position: absolute;
+	top: 65%;
+	width: 70%;
+}
+
 input {
 	font-family: "Poppins", sans-serif;
 	padding: 35px 85px;

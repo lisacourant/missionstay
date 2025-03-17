@@ -1,18 +1,35 @@
+<script>
+	function goPage2() {
+		var page1 = document. getElementById("page1");
+		var page2 = document. getElementById("page2");
+		
+		page1.style.display = "none";
+		page2.style.display = "block";
+	}
+</script>
+
 <html>
 	<head>
 		<link rel="stylesheet" href="./style.css"/>
 	</head>
 	
 	<body>
-		<h4 class="lieu">📍 JYP Entertainment</h4>
-		<p>
-			<p class="dialogue">- Ok j'avoue tout !</p>
-			<p class="monologue">JYP tient le précieux disque dur de Bangchan entre ses mains !</p>
-			<p class="dialogue">- J’avoue tout... Je voulais m’attribuer le mérite du génie de Bangchan et impressionner Tiger JK au passage... S’il vous plaît, ne dites rien à personne et je vous rends le disque dur !</p>
+		<div class="main">
+			<h4 class="lieu">📍 JYP Entertainment</h4>
+			<div id="page1">
+				<p class="dialogue">- Ok j'avoue tout !</p>
+				<p class="monologue" id="testPos">JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !JYP tient le précieux disque dur de Bangchan entre ses mains !</p>
+				
+				<button onclick="goPage2()">Suivant</button>
+			</div>
 			
-			<h2 class="mission">JYP te rend le disque dur !</h2>
-			<p class="mission">Bravo, tu as fini la mission ! Reviens nous voir au stand (Lisa ou Rose) et montre-nous cette page pour qu’on puisse t’inscrire sur la tombola !</p>
-		</p>
+			<div id="page2" style="display:none">
+				<p class="dialogue">- J’avoue tout... Je voulais m’attribuer le mérite du génie de Bangchan et impressionner Tiger JK au passage... S’il vous plaît, ne dites rien à personne et je vous rends le disque dur !</p>
+				
+				<h2 class="mission">JYP te rend le disque dur !</h2>
+				<p class="mission">Bravo, tu as fini la mission ! Reviens nous voir au stand (Lisa ou Rose) et montre-nous cette page pour qu’on puisse t’inscrire sur la tombola !</p>
+			</div>
+		</div>
 	</body>
 	
 </html>
