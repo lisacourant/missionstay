@@ -5,10 +5,10 @@
 		var preuve3 = document. getElementById("polaroid_heure").value;
 		
 		if(
-			(preuve1.toLowerCase().includes("clé usb") || preuve1.toLowerCase().includes("clef usb"))
-			&& (preuve2.toLowerCase().includes("noeud") || preuve2.toLowerCase().includes("ruban") || preuve2.toLowerCase().includes("nœud"))
-			&& (preuve3.toLowerCase().includes("19h57") || (preuve3.toLowerCase().includes("19") && preuve3.toLowerCase().includes("57")))
-			) {
+		(preuve1.toLowerCase().includes("clé usb") || preuve1.toLowerCase().includes("clef usb"))
+		&& (preuve2.toLowerCase().includes("noeud") || preuve2.toLowerCase().includes("ruban") || preuve2.toLowerCase().includes("nœud"))
+		&& (preuve3.toLowerCase().includes("19h57") || (preuve3.toLowerCase().includes("19") && preuve3.toLowerCase().includes("57")))
+		) {
 			location.assign("./jype124657.html");
 			} else {
 			alert("Tu n'as pas bien analysé les preuves... Réessaye.");
@@ -23,21 +23,36 @@
 	
 	<body>
 		<p class="mission">As-tu bien scanné tous les QR codes avant de venir ici ? :)</p>
-		<h4 class="lieu">📍 JYP Entertainment</h4>
-		<p>
-			<p class="monologue">Je suis à JYP Entertainment, le lieu du crime. Je ne devrais être ici que si j’ai bien réuni assez de preuves pour trouver mon coupable.<br/><br/>3 preuves incriminantes devraient suffire !</p>
-			
-			<p class="consigne">Première preuve : la vidéo de surveillance ! Sur quelle support est-elle enregistrée ?</p>
-			<p><input type="text" id="video_surveillance" name="video_surveillance"/></p>
-			
-			<p class="consigne">Deuxième preuve : le portrait robot ! Quel élément portait le coupable dans ses cheveux ?</p>
-			<p><input type="text" id="portrait_robot" name="portrait_robot"/></p>
-			
-			<p class="consigne">Troisième preuve : le polaroid ! Il a été pris le 15 mars à quelle heure ?</p>
-			<p><input type="text" id="polaroid_heure" name="polaroid_heure"/></p>
-			
-			<p><button onclick="verifier()">Valider</button></p>
-		</p>
+		<div class="lieuBg">
+			<img class="fond" src="./Ressources/img/lieu_bg.png"/>
+			<div class="content">
+				<h4 class="lieu">📍 JYP Entertainment</h4>
+			</div>
+		</div>
+		
+		<div class="dialBg">
+			<img class="fond" src="./Ressources/img/dial_bg2.png"/>
+			<div class="content">
+				<p class="monologue">Je suis à JYP Entertainment, le lieu du crime. Je ne devrais être ici que si j’ai bien réuni assez de preuves pour trouver mon coupable.<br/><br/>3 preuves incriminantes devraient suffire !</p>
+			</div>
+		</div>
+		<p class="consigne">Première preuve : la vidéo de surveillance ! Sur quelle support est-elle enregistrée ?</p>
+		<p><input type="text" id="video_surveillance" name="video_surveillance"/></p>
+		
+		<p class="consigne">Deuxième preuve : le portrait robot ! Quel élément portait le coupable dans ses cheveux ?</p>
+		<p><input type="text" id="portrait_robot" name="portrait_robot"/></p>
+		
+		<p class="consigne">Troisième preuve : le polaroid ! Il a été pris le 15 mars à quelle heure ?</p>
+		<p><input type="text" id="polaroid_heure" name="polaroid_heure"/></p>
+		
+		
+		<div class="buttonBg">
+			<img class="fond" src="./Ressources/img/button_bg.png"/>
+			<div class="content">
+				<button onclick="verifier()">Valider</button>
+			</div>
+		</div>
+		
 	</body>
 	
-</html>
+</html>		

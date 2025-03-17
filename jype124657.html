@@ -14,25 +14,25 @@
 	</head>
 	
 	<body>
-		<div class="main">
+		<div>
 			<div class="lieuBg">
-				<img class="fond" src="./Ressources/img/lieu_bg.jpg"/>
+				<img class="fond" src="./Ressources/img/lieu_bg.png"/>
 				<div class="content">
 					<h4 class="lieu">📍 JYP Entertainment</h4>
 				</div>
-			</div>
-			
-			<div class="charBg">
-				<img class="fond" src="./Ressources/img/char_bg.jpg"/>
-				<div class="content">
-					<img class="charaImg" src="./Ressources/img/jyp.jpg"/>
-				</div>
-			</div>
-			
+			</div>			
 			
 			<div id="page1">
+				<div class="charBg">
+					<img class="fond" src="./Ressources/img/char_bg.png"/>
+					<div class="content">
+						<img class="charaImg" src="./Ressources/img/jyp.jpg"/>
+					</div>
+				</div>
+				
 				<div class="dialBg">
-					<img class="fond" src="./Ressources/img/dial_bg.jpg"/>
+					<img class="fond" src="./Ressources/img/dial_bg.png"/>
+					<div class="nameChar">J.Y. Park</div>
 					<div class="content">
 						<p class="dialogue">- Ok j'avoue tout !</p>
 						<p class="monologue">JYP tient le précieux disque dur de Bangchan entre ses mains !</p>
@@ -40,7 +40,7 @@
 				</div>
 				
 				<div class="buttonBg">
-					<img class="fond" src="./Ressources/img/button_bg.jpg"/>
+					<img class="fond" src="./Ressources/img/button_bg.png"/>
 					<div class="content">
 						<button onclick="goPage2()">Suivant</button>
 					</div>
@@ -48,10 +48,28 @@
 			</div>
 			
 			<div id="page2" style="display:none">
-				<p class="dialogue">- J’avoue tout... Je voulais m’attribuer le mérite du génie de Bangchan et impressionner Tiger JK au passage... S’il vous plaît, ne dites rien à personne et je vous rends le disque dur !</p>
+				<div class="charBg">
+					<img class="fond" src="./Ressources/img/char_bg.png"/>
+					<div class="content">
+						<img class="charaImg" src="./Ressources/img/jyp.jpg"/>
+					</div>
+				</div>
 				
-				<h2 class="mission">JYP te rend le disque dur !</h2>
-				<p class="mission">Bravo, tu as fini la mission ! Reviens nous voir au stand (Lisa ou Rose) et montre-nous cette page pour qu’on puisse t’inscrire sur la tombola !</p>
+				<div class="dialBg">
+					<img class="fond" src="./Ressources/img/dial_bg.png"/>
+					<div class="nameChar">J.Y. Park</div>
+					<div class="content">
+						<p class="dialogue">- J’avoue tout... Je voulais m’attribuer le mérite du génie de Bangchan et impressionner Tiger JK au passage... S’il vous plaît, ne dites rien à personne et je vous rends le disque dur !</p>
+					</div>
+				</div>
+				
+				<div class="missionBg">
+					<img class="fond" src="./Ressources/img/mission_bg.png"/>
+					<div class="content">
+						<h2 class="mission">JYP te rend le disque dur !</h2>
+						<p class="mission">Bravo, tu as fini la mission ! Reviens nous voir au stand (Lisa ou Rose) et montre-nous cette page pour qu’on puisse t’inscrire sur la tombola !</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>

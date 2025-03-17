@@ -126,7 +126,7 @@ body {
 	font-size: 1em;
 }
 
-.lieuBg, .charBg, .dialBg, .buttonBg {
+.lieuBg, .charBg, .dialBg, .buttonBg, .missionBg {
 	margin-bottom: 15px;
 	position: relative;
 }
@@ -135,7 +135,7 @@ body {
 	text-align: right;
 }
 
-.lieuBg .fond, .charBg .fond, .dialBg .fond {
+.lieuBg .fond, .charBg .fond, .dialBg .fond, .missionBg .fond {
 	width: 100%;
 }
 
@@ -143,7 +143,7 @@ body {
 	width: 30%;
 }
 
-.lieuBg .content, .charBg .content, .dialBg .content, .buttonBg .content {
+.lieuBg .content, .charBg .content, .dialBg .content, .buttonBg .content, .missionBg .content, .dialBg .nameChar {
 	position: absolute;
 }
 
@@ -152,10 +152,23 @@ body {
 	bottom: 0;
 }
 
-.lieuBg .content, .dialBg .content {
+.lieuBg .content, .missionBg .content {
 	top: 15px;
 	left: 10%;
 	width: 80%;
+}
+
+.dialBg .content {
+	top: 55px;
+	left: 10%;
+	width: 80%;
+}
+
+.dialBg .nameChar {
+	top: 20px;
+	left: 10%;
+	font-size: 25px;
+	text-transform: uppercase;
 }
 
 .charBg .content {
@@ -212,7 +225,7 @@ button {
 .dialogue {
 	font-size: 25px;
 	font-weight: 500;
-	padding-bottom: 80px;
+	padding-bottom: 60px;
 }
 
 .lieu {
