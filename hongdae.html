@@ -9,19 +9,19 @@
 		}
 		
 		function loadPage() {
-			document. getElementById("bouton").style.display = "block";
+			document. getElementById("bouton").style.height = "20vh";
 		}
 	</script>
 	
 	<style>
-		button {
+		#bouton {
 		
 		background: transparent;
 		border: none !important;
 		font-size:0;
-		position: relative;
-		left: 60vw;
-		bottom: 450px;
+		position: absolute;
+		right:0;
+		bottom: 0;
 		width: 40vw;
 		height: 20vh;
 		padding: 0;
@@ -51,7 +51,7 @@
 	</style>
 	
 	
-	<body onload="loadPage()">
+	<body>
 		<!--<h4 class="lieu">📍 Hongdae</h4>
 			<p>
 			<p class="monologue">On trouve de nombreux noraebang (karaoke) à Hongdae ! Je viens d’y retrouver Wooyoung de ATEEZ qui s’entraîne pour leur prochaine tournée.</p>
@@ -62,7 +62,7 @@
 		</p>-->
 		<div>
 			<img src="./Ressources/img/bgs/hongdae.jpg"/>
-			<button id="bouton" style="display:none" onclick="verifier()">Valider</button>
+			<button id="bouton" onclick="verifier()">Suivant</button>
 		</div>
 	</body>
 	
