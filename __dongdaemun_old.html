@@ -1,0 +1,27 @@
+<script>
+	function callJK() {
+		var num = document. getElementById("tiger_jk_phone").value;
+		if(num == 2510) {
+			location.assign("./dongdaemun159872.html");
+			} else {
+			alert("Tu t'es trompé de numéro. Réessaye... Indice : ces chiffres t'ont été donnés par un suspect !");
+		}
+		}
+</script>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="./style.css"/>
+	</head>
+	
+	<body>
+		<h4 class="lieu">📍 Dongdaemun</h4>
+		<p>
+			<p class="monologue"><b>Tiger JK</b> fait partie de mes suspects. Il aurait pu vouloir voler les musiques de Stray Kids pour les utiliser dans sa propre agence ! Il faudrait que je l’appelle pour l’interroger.<br/><br/>Une autre personne a déjà dû me donner son numéro pendant cette enquête...</p>
+			<p class="consigne">4 derniers chiffres du numéro de téléphone de Tiger JK :</p>
+			<p><input type="number" id="tiger_jk_phone" name="tiger_jk_phone" min="0" max="9999"/></p>
+			<p><button onclick="callJK()">Appeler</button></p>
+		</p>
+	</body>
+	
+</html>
