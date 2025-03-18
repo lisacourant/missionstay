@@ -1,56 +1,33 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="./style.css"/>
+		<link rel="stylesheet" href="./styles.css"/>
 	</head>
 	
 	<script>
-		function verifier() {
-			location.assign("./hongdae.html");
+		function goPage2() {
+			var page1 = document. getElementById("page1");
+			var page2 = document. getElementById("page2");
+			
+			page1.style.display = "none";
+			page2.style.display = "block";
 		}
 		
-		function loadPage() {
-			document. getElementById("bouton").style.height = "20vh";
+		function goPage3() {
+			var page2 = document. getElementById("page2");
+			var page3 = document. getElementById("page3");
+			
+			page2.style.display = "none";
+			page3.style.display = "block";
+		}
+		
+		function goPage4() {
+			var page3 = document. getElementById("page3");
+			var page4 = document. getElementById("page4");
+			
+			page3.style.display = "none";
+			page4.style.display = "block";
 		}
 	</script>
-	
-	<style>
-		#bouton {
-		
-		background: transparent;
-		border: none !important;
-		font-size:0;
-		position: absolute;
-		right:0;
-		bottom: 0;
-		width: 40vw;
-		height: 20vh;
-		padding: 0;
-		margin: 0;
-		}
-		
-		
-		body {
-		margin:0;
-		height: 100vh;
-		}
-		
-		html {
-		height:100%;
-		}
-		
-		div {
-		height:100vh;
-		position: relative;
-		}
-		
-		img {
-		width:100%;
-		min-height: 100%;
-		height:auto;
-		}
-	</style>
-	
-	
 	<body>
 		<!--<h4 class="lieu">📍 Hongdae</h4>
 			<p>
@@ -60,9 +37,23 @@
 			<img class="imgIndice" src="./Ressources/img/indice_peluche.png"/>
 			<p class="mission">Pour continuer ta mission, scanne les autres QR codes !</p>
 		</p>-->
-		<div>
-			<img src="./Ressources/img/bgs/hongdae.jpg"/>
-			<button id="bouton" onclick="verifier()">Suivant</button>
+		<div id="page1">
+			<img src="./Ressources/img/bgs/hongdae1.jpg"/>
+			<button id="bouton" onclick="goPage2()">Suivant</button>
+		</div>
+		
+		<div id="page2" style="display:none">
+			<img src="./Ressources/img/bgs/hongdae2.jpg"/>
+			<button id="bouton" onclick="goPage3()">Suivant</button>
+		</div>
+		
+		<div id="page3" style="display:none">
+			<img src="./Ressources/img/bgs/hongdae3.jpg"/>
+			<button id="bouton" onclick="goPage4()">Suivant</button>
+		</div>
+		
+		<div id="page4" style="display:none">
+			<img src="./Ressources/img/bgs/hongdae4.jpg"/>
 		</div>
 	</body>
 	
