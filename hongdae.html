@@ -7,6 +7,10 @@
 		function verifier() {
 			location.assign("./hongdae.html");
 		}
+		
+		function loadPage() {
+			document. getElementById("bouton").style.display = "block";
+		}
 	</script>
 	
 	<style>
@@ -19,7 +23,7 @@
 		left: 60vw;
 		bottom: 450px;
 		width: 40vw;
-		height: 10vh;
+		height: 20vh;
 		padding: 0;
 		margin: 0;
 		}
@@ -27,7 +31,7 @@
 		
 		body {
 		margin:0;
-		height: 100%;
+		height: 100vh;
 		}
 		
 		html {
@@ -35,9 +39,8 @@
 		}
 		
 		div {
-		height:100%;
+		height:100vh;
 		position: relative;
-		overflow: hidden;
 		}
 		
 		img {
@@ -48,7 +51,7 @@
 	</style>
 	
 	
-	<body>
+	<body onload="loadPage()">
 		<!--<h4 class="lieu">📍 Hongdae</h4>
 			<p>
 			<p class="monologue">On trouve de nombreux noraebang (karaoke) à Hongdae ! Je viens d’y retrouver Wooyoung de ATEEZ qui s’entraîne pour leur prochaine tournée.</p>
@@ -59,7 +62,7 @@
 		</p>-->
 		<div>
 			<img src="./Ressources/img/bgs/hongdae.jpg"/>
-			<button onclick="verifier()">Valider</button>
+			<button id="bouton" style="display:none" onclick="verifier()">Valider</button>
 		</div>
 	</body>
 	
