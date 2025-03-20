@@ -1,57 +1,114 @@
-<script>
-	function verifier() {
-		var preuve1 = document. getElementById("video_surveillance").value;
-		var preuve2 = document. getElementById("portrait_robot").value;
-		var preuve3 = document. getElementById("polaroid_heure").value;
-		
-		if(
-		(preuve1.toLowerCase().includes("clé usb") || preuve1.toLowerCase().includes("clef usb"))
-		&& (preuve2.toLowerCase().includes("noeud") || preuve2.toLowerCase().includes("ruban") || preuve2.toLowerCase().includes("nœud"))
-		&& (preuve3.toLowerCase().includes("19h57") || (preuve3.toLowerCase().includes("19") && preuve3.toLowerCase().includes("57")))
-		) {
-			location.assign("./jype124657.html");
-			} else {
-			alert("Tu n'as pas bien analysé les preuves... Réessaye.");
-		}
-	}
-</script>
-
 <html>
+	<script>
+		function goPage2() {
+			var preuve1 = document. getElementById("video_surveillance").value;
+			
+			if(
+			preuve1.toLowerCase().includes("clé usb") || preuve1.toLowerCase().includes("clef usb")
+			) {
+				var page1 = document. getElementById("page1");
+				var page2 = document. getElementById("page2");
+				
+				page1.style.display = "none";
+				page2.style.display = "block";
+				} else {
+				alert("Tu n'as pas bien analysé les preuves... Réessaye.");
+			}
+		}
+		
+		function goPage3() {
+			var preuve2 = document. getElementById("portrait_robot").value;
+			
+			if(
+			(preuve2.toLowerCase().includes("noeud") || preuve2.toLowerCase().includes("ruban") || preuve2.toLowerCase().includes("nœud"))
+			) {
+				var page2 = document. getElementById("page2");
+				var page3 = document. getElementById("page3");
+				
+				page2.style.display = "none";
+				page3.style.display = "block";
+				} else {
+				alert("Tu n'as pas bien analysé les preuves... Réessaye.");
+			}
+		}
+		
+		function goPage4() {
+			var preuve3 = document. getElementById("polaroid_heure").value;
+			
+			if(
+			(preuve3.toLowerCase().includes("19h57") || (preuve3.toLowerCase().includes("19") && preuve3.toLowerCase().includes("57")))
+			) {
+				location.assign("./jype124657.html");
+				} else {
+				alert("Tu n'as pas bien analysé les preuves... Réessaye.");
+			}
+		}
+	</script>
+	
+	
 	<head>
-		<link rel="stylesheet" href="./style.css"/>
+		<link rel="stylesheet" href="./styles.css"/>
 	</head>
 	
 	<body>
-		<p class="mission">As-tu bien scanné tous les QR codes avant de venir ici ? :)</p>
-		<div class="lieuBg">
+		<div id="page1">
+			<img src="./Ressources/img/bgs/jype_1.jpg"/>
+			<div class="blocData">
+				<p><b><i>INDICE 1</i></b> - La vidéo de surveillance ! Sur quelle support est-elle enregistrée ?</p>
+				<input class="data" type="text" id="video_surveillance" name="video_surveillance" placeholder="Ta réponse"/>
+				<button class="boutonForm" onclick="goPage2()">Suivant</button>
+			</div>
+		</div>
+		
+		<div id="page2" style="display:none;">
+			<img src="./Ressources/img/bgs/jype_1.jpg"/>
+			<div class="blocData">
+				<p><b><i>INDICE 2</i></b> - Le portrait robot ! Quel élément portait le coupable dans ses cheveux ?</p>
+				<input class="data" type="text" id="portrait_robot" name="portrait_robot" placeholder="Ta réponse"/>
+				<button class="boutonForm" onclick="goPage3()">Suivant</button>
+			</div>
+		</div>
+		
+		<div id="page3" style="display:none;">
+			<img src="./Ressources/img/bgs/jype_1.jpg"/>
+			<div class="blocData">
+				<p><b><i>INDICE 3</i></b> - Le polaroid ! Il a été pris le 15 mars à quelle heure ?</p>
+				<input class="data" type="text" id="polaroid_heure" name="polaroid_heure" placeholder="Ta réponse"/>
+				<button class="boutonForm" onclick="goPage4()">Suivant</button>
+			</div>
+		</div>
+		<!--
+			
+			<p class="mission">As-tu bien scanné tous les QR codes avant de venir ici ? :)</p>
+			<div class="lieuBg">
 			<img class="fond" src="./Ressources/img/lieu_bg.png"/>
 			<div class="content">
-				<h4 class="lieu">📍 JYP Entertainment</h4>
+			<h4 class="lieu">📍 JYP Entertainment</h4>
 			</div>
-		</div>
-		
-		<div class="dialBg">
+			</div>
+			
+			<div class="dialBg">
 			<img class="fond" src="./Ressources/img/dial_bg2.png"/>
 			<div class="content">
-				<p class="monologue">Je suis à JYP Entertainment, le lieu du crime. Je ne devrais être ici que si j’ai bien réuni assez de preuves pour trouver mon coupable.<br/><br/>3 preuves incriminantes devraient suffire !</p>
+			<p class="monologue">Je suis à JYP Entertainment, le lieu du crime. Je ne devrais être ici que si j’ai bien réuni assez de preuves pour trouver mon coupable.<br/><br/>3 preuves incriminantes devraient suffire !</p>
 			</div>
-		</div>
-		<p class="consigne">Première preuve : la vidéo de surveillance ! Sur quelle support est-elle enregistrée ?</p>
-		<p><input type="text" id="video_surveillance" name="video_surveillance"/></p>
-		
-		<p class="consigne">Deuxième preuve : le portrait robot ! Quel élément portait le coupable dans ses cheveux ?</p>
-		<p><input type="text" id="portrait_robot" name="portrait_robot"/></p>
-		
-		<p class="consigne">Troisième preuve : le polaroid ! Il a été pris le 15 mars à quelle heure ?</p>
-		<p><input type="text" id="polaroid_heure" name="polaroid_heure"/></p>
-		
-		
-		<div class="buttonBg">
+			</div>
+			<p class="consigne">Première preuve : la vidéo de surveillance ! Sur quelle support est-elle enregistrée ?</p>
+			<p><input type="text" id="video_surveillance" name="video_surveillance"/></p>
+			
+			<p class="consigne">Deuxième preuve : le portrait robot ! Quel élément portait le coupable dans ses cheveux ?</p>
+			<p><input type="text" id="portrait_robot" name="portrait_robot"/></p>
+			
+			<p class="consigne">Troisième preuve : le polaroid ! Il a été pris le 15 mars à quelle heure ?</p>
+			<p><input type="text" id="polaroid_heure" name="polaroid_heure"/></p>
+			
+			
+			<div class="buttonBg">
 			<img class="fond" src="./Ressources/img/button_bg.png"/>
 			<div class="content">
-				<button onclick="verifier()">Valider</button>
+			<button onclick="verifier()">Valider</button>
 			</div>
-		</div>
+		</div> -->
 		
 	</body>
 	

@@ -79,7 +79,7 @@ img {
 	font-size: 40px;
 	background: var(--bubbleBg);
 	border: 5px solid var(--bubbleBorder);
-	outline: 3px solid var(--bubbleBorderExt);
+	outline: 5px solid var(--bubbleBorderExt);
 	padding: 30px;
 	color: var(--bubbleBorderExt);
 	border-radius: 100px;
@@ -89,7 +89,7 @@ img {
 .data {
 	background: var(--bubbleBg);
 	border: 5px solid var(--bubbleBorder);
-	outline: 3px solid var(--bubbleBorderExt);
+	outline: 5px solid var(--bubbleBorderExt);
 	width: 100%;
 	height: 150px;
 	margin-bottom: 50px !important;
@@ -103,7 +103,7 @@ img {
 .boutonForm {
 	background: var(--buttonBg);
 	border: 5px solid var(--buttonBorder);
-	outline: 3px solid var(--buttonBorderExt);
+	outline: 5px solid var(--buttonBorderExt);
 	font-size:50;
 	width: 50%;
 	height: 150px;
