@@ -1,19 +1,39 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="./style.css"/>
+		<link rel="stylesheet" href="./styles.css"/>
 	</head>
 	
+	<script>
+		function goPage2() {
+			var page1 = document. getElementById("page1");
+			var page2 = document. getElementById("page2");
+			
+			page1.style.display = "none";
+			page2.style.display = "block";
+		}
+		
+		function goPage3() {
+			var page2 = document. getElementById("page2");
+			var page3 = document. getElementById("page3");
+			
+			page2.style.display = "none";
+			page3.style.display = "block";
+		}
+	</script>
 	<body>
-		<h4 class="lieu">📍 KQ Entertainment</h4>
-		<p>
-			<p class="monologue">Je donne le programme d’entraînement à Wooyoung.</p>
-			<p class="dialogue">- Re-bonjour Wooyoung ! Dis-moi à nouveau... Où étais-tu le 15 mars au soir ?<br/>
-				- Ok j’ai menti, on ne faisait pas de dance cover, on faisait de la muscu ! J’avais un peu honte de mes performances par rapport à Changbin, donc je ne voulais pas en parler. Mais on était bien ensemble, il a dû te le confirmer !<br/>
-				- C’est vrai. As-tu vu JYP aussi ?<br/>
-			- Hmmm non, par contre j’ai vu Tiger JK qui travaillait dans le bureau toute la soirée, on le voyait par la porte vitrée. Regarde, vers 20h on a fait cette photo ensemble !</p>
-			<img class="imgIndice" src="./Ressources/img/indice_pola.png"/>
-			<p class="mission">Pour continuer ta mission, scanne les autres QR codes !</p>
-		</p>
+		<div id="page1">
+			<img src="./Ressources/img/bgs/kq_2.jpg"/>
+			<button class="bouton" onclick="goPage2()">Suivant</button>
+		</div>
+		
+		<div id="page2" style="display:none">
+			<img src="./Ressources/img/bgs/kq_3.jpg"/>
+			<button class="bouton" onclick="goPage3()">Suivant</button>
+		</div>
+		
+		<div id="page3" style="display:none">
+			<img src="./Ressources/img/bgs/kq_4.jpg"/>
+		</div>
 	</body>
 	
 </html>

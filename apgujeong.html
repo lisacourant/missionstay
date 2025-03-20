@@ -1,14 +1,39 @@
-<head>
-	<link rel="stylesheet" href="./style.css"/>
-</head>
-
-<body>
-	<h4 class="lieu">📍 Apgujeong Rodeo</h4>
-	<p>
-		<p class="monologue">Apgujeong Rodeo, l’endroit à la mode pour faire du shopping ! On m’a dit que je pourrais y trouver Miyeon de (G)I-DLE. Elle se rend régulièrement dans les bureaux de JYPE pour voir son amie Sana.</p>
-		<p class="dialogue">- Bonjour Miyeon ! Où étiez-vous le soir du 15 mars vers 20h ?<br/>
-- J’allais au restaurant avec Sana, on venait juste de partir de JYPE. Vers 19h45, quand j’étais là-bas, j’ai vu quelqu’un rôder vers le studio de Bangchan. Je ne suis pas sûre de qui il s’agit. Je peux vous donner son portrait robot si vous voulez.</p>
-		<img class="imgIndice" src="./Ressources/img/indice_portrait_robot.png"/>
-		<p class="mission">Pour continuer ta mission, scanne les autres QR codes !</p>
-	</p>
-</body>
+<html>
+	<head>
+		<link rel="stylesheet" href="./styles.css"/>
+	</head>
+	
+	<script>
+		function goPage2() {
+			var page1 = document. getElementById("page1");
+			var page2 = document. getElementById("page2");
+			
+			page1.style.display = "none";
+			page2.style.display = "block";
+		}
+		
+		function goPage3() {
+			var page2 = document. getElementById("page2");
+			var page3 = document. getElementById("page3");
+			
+			page2.style.display = "none";
+			page3.style.display = "block";
+		}
+	</script>
+	<body>
+		<div id="page1">
+			<img src="./Ressources/img/bgs/apgujeong_1.jpg"/>
+			<button class="bouton" onclick="goPage2()">Suivant</button>
+		</div>
+		
+		<div id="page2" style="display:none">
+			<img src="./Ressources/img/bgs/apgujeong_2.jpg"/>
+			<button class="bouton" onclick="goPage3()">Suivant</button>
+		</div>
+		
+		<div id="page3" style="display:none">
+			<img src="./Ressources/img/bgs/apgujeong_3.jpg"/>
+		</div>
+	</body>
+	
+</html>

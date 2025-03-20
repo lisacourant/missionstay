@@ -1,83 +1,38 @@
-<script>
-	function goPage2() {
-		var page1 = document. getElementById("page1");
-		var page2 = document. getElementById("page2");
-		
-		page1.style.display = "none";
-		page2.style.display = "block";
-	}
-	
-	function goPage3() {
-		var page2 = document. getElementById("page2");
-		var page3 = document. getElementById("page3");
-		
-		page2.style.display = "none";
-		page3.style.display = "block";
-	}
-</script>
-
 <html>
 	<head>
-		<link rel="stylesheet" href="./style.css"/>
+		<link rel="stylesheet" href="./styles.css"/>
 	</head>
 	
-	<body class="jype">
-		<div class="lieuBg">
-			<div class="content">
-				<h4 class="lieu">📍 JYP Entertainment</h4>
-			</div>
-		</div>			
+	<script>
+		function goPage2() {
+			var page1 = document. getElementById("page1");
+			var page2 = document. getElementById("page2");
+			
+			page1.style.display = "none";
+			page2.style.display = "block";
+		}
 		
+		function goPage3() {
+			var page2 = document. getElementById("page2");
+			var page3 = document. getElementById("page3");
+			
+			page2.style.display = "none";
+			page3.style.display = "block";
+		}
+	</script>
+	<body>
 		<div id="page1">
-			<div class="characterDialog">
-				<div class="charBg">
-					<img class="charaImg" src="./Ressources/img/chars/jyp.png"/>
-				</div>
-				
-				<div class="dialBg">
-					<div class="nameChar">J.Y. Park</div>
-					<div class="content">
-						<p class="dialogue">- Ok j'avoue tout !</p>
-						<p class="monologue">JYP tient le précieux disque dur de Bangchan entre ses mains !</p>
-					</div>
-				</div>
-				
-				<div class="buttonBg">
-					<div class="content">
-						<button onclick="goPage2()">Suivant</button>
-					</div>
-				</div>
-			</div>
+			<img src="./Ressources/img/bgs/jype_2.jpg"/>
+			<button class="bouton" onclick="goPage2()">Suivant</button>
 		</div>
 		
 		<div id="page2" style="display:none">
-			<div class="characterDialog">
-				<div class="charBg">
-					<img class="charaImg" src="./Ressources/img/chars/jyp.png"/>
-				</div>
-				
-				<div class="dialBg">
-					<div class="nameChar">J.Y. Park</div>
-					<div class="content">
-						<p class="dialogue">- J’avoue tout... Je voulais m’attribuer le mérite du génie de Bangchan et impressionner Tiger JK au passage... S’il vous plaît, ne dites rien à personne et je vous rends le disque dur !</p>
-					</div>
-				</div>
-				
-				<div class="buttonBg">
-					<div class="content">
-						<button onclick="goPage3()">Suivant</button>
-					</div>
-				</div>
-			</div>
+			<img src="./Ressources/img/bgs/jype_3.jpg"/>
+			<button class="bouton" onclick="goPage3()">Suivant</button>
 		</div>
 		
 		<div id="page3" style="display:none">
-			<div class="missionBg">
-				<div class="content">
-					<h2 class="mission">JYP te rend le disque dur !</h2>
-					<p class="mission">Bravo, tu as fini la mission ! Reviens nous voir au stand (Lisa ou Rose) et montre-nous cette page pour qu’on puisse t’inscrire sur la tombola !</p>
-				</div>
-			</div>
+			<img src="./Ressources/img/bgs/jype_4.jpg"/>
 		</div>
 	</body>
 	
